@@ -17,12 +17,12 @@
 <body>
     <h1> Button to incriment</h1>
  <script> 
-
+  let body = document.getElementsByTagName('body')[0]
    let btn = document.createElement('button') 
               btn.id = 'btn';
               btn.innerHTML = '0';
-              let body = document.getElementsByTagName('body')
-              body.appendChild('btn')
+             
+              body.appendChild(btn)
               btn.onclick = function(){
                   
                   btn.innerHTML++
