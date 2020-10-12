@@ -1,0 +1,34 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incremental Button</title>
+    <style>
+        #btn {
+    width: 96px;
+    height: 48px;
+    font-size: 24px;
+            }
+    </style>
+</head>
+<body>
+    <h1> Button to incriment</h1>
+ <script> 
+
+   let btn = document.createElement('button') 
+              btn.id = 'btn';
+              btn.innerHTML = '0';
+              let body = document.getElementsByTagName('body')
+              body.appendChild('btn')
+              btn.onclick = function(){
+                  
+                  btn.innerHTML++
+              }
+              
+
+</script>
+</body>
+</html>
